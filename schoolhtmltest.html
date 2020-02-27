@@ -1,0 +1,138 @@
+<!DOCTPYE HTML>
+<html>
+	<head>
+		<title>Hello! This is the title!</title>
+			<link rel='icon' href='https://tinyurl.com/srclobj'>
+		<!-- this is the start of a multi-line a comment
+		      Your links to style sheets and/or JavaScript files go here
+		(this is the end of the comment -->
+	</head>
+	<body style='background-color:yellow;'>
+	<font face='verdana' color='blue'>
+		<h1>
+			<center>
+				<marquee behavior="scroll" direction="right">Welcome to my HTML Website!</marquee>
+			</center>
+		</h1>
+		<h2>
+			<marquee behavior="scroll" direction="up">This is an h2 heading</marquee>
+		</h2>
+		<h3>
+			<marquee behavior="scroll" direction="down">This is an h3 heading</marquee>
+		<h4>This is an h4 heading</h4>
+		<h5>This is an h5 heading</h5>
+		<h6>This is an h6 heading</h6>
+		<marquee behavior="scroll" direction="left">Welcome to my HTML site!</marquee>
+		<p>
+			<i>This is a paragraph in italics</i>
+		<p>This is a paragraph `&lt;p&gt;` tag</p>
+		<ul>This is a bulleted list  `&lt;ul&gt;` tag<
+		<li>list item 1…  `&lt;li&gt;` tag</li>
+		<li>item 2</li>
+		<li>...</li>
+		</ul>
+		<p>Another paragraph which includes a link  `&lt;a&gt;` tag to <a href='https://google.ca'>Google</a></p>
+		<p>Here's an image: `&lt;img&gt;` tag (with an `inline` style)<br/>
+		<!-- How to insert a linked image-->
+		<marquee behavior="scroll" direction="right">
+			<img src='https://bit.ly/2HmVpnO' style='height:300px'></p>
+		</marquee>
+		<marquee behavior="scroll" direction="left" scrollamount="10">Hello!</marquee>
+		<marquee behavior="scroll" direction="left" scrollamount="20">HTML!</marquee>
+        <marquee behavior="scroll" direction="left" scrollamount="30">This is cool!</marquee>
+		<marquee behavior="scroll" direction="left" scrollamount="40">Goodbye</marquee>
+		<marquee behavior="scroll" direction="left">
+			<img src='https://tinyurl.com/sx6ahqn' style='height:300px'></p>
+		</marquee>
+		<marquee behavior="scroll" direction="left" scrollamount="100">
+			<a href='https://www.reddit.com' target='_blank'>Catch me if you can!</a>
+		</marquee>
+		<hr/>
+		<p>See <a href='https://www.w3schools.com/html/html_intro.asp' target='_blank'>W3 Schools</a> 
+		(opens a `target` attribute)</p>
+		</font>
+		      <script> 
+         //function that display value 
+         function dis(val) 
+         { 
+             document.getElementById("result").value+=val 
+         } 
+           
+         //function that evaluates the digit and return result 
+         function solve() 
+         { 
+             let x = document.getElementById("result").value 
+             let y = eval(x) 
+             document.getElementById("result").value = y 
+         } 
+           
+         //function that clear the display 
+         function clr() 
+         { 
+             document.getElementById("result").value = "" 
+         } 
+      </script> 
+      <!-- for styling -->
+      <style> 
+         .title{ 
+         margin-bottom: 10px; 
+         text-align:center; 
+         width: 210px; 
+         color:green; 
+         border: solid black 2px; 
+         } 
+  
+         input[type="button"] 
+         { 
+         background-color:green; 
+         color: black; 
+         border: solid black 2px; 
+         width:100% 
+         } 
+  
+         input[type="text"] 
+         { 
+         background-color:white; 
+         border: solid black 2px; 
+         width:100% 
+         } 
+      </style> 
+   </head> 
+	<!Calculator>
+      <div class = title>Andrew's Calculator</div> 
+      <table border="1"> 
+         <tr> 
+            <td colspan="3"><input type="text" id="result"/></td> 
+            <!-- clr() function will call clr to clear all value -->
+            <td><input type="button" value="c" onclick="clr()"/> </td> 
+         </tr> 
+         <tr> 
+            <!-- create button and assign value to each button -->
+            <!-- dis("1") will call function dis to display value -->
+            <td><input type="button" value="1" onclick="dis('1')"/> </td> 
+            <td><input type="button" value="2" onclick="dis('2')"/> </td> 
+            <td><input type="button" value="3" onclick="dis('3')"/> </td> 
+            <td><input type="button" value="/" onclick="dis('/')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="4" onclick="dis('4')"/> </td> 
+            <td><input type="button" value="5" onclick="dis('5')"/> </td> 
+            <td><input type="button" value="6" onclick="dis('6')"/> </td> 
+            <td><input type="button" value="-" onclick="dis('-')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="7" onclick="dis('7')"/> </td> 
+            <td><input type="button" value="8" onclick="dis('8')"/> </td> 
+            <td><input type="button" value="9" onclick="dis('9')"/> </td> 
+            <td><input type="button" value="+" onclick="dis('+')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="." onclick="dis('.')"/> </td> 
+            <td><input type="button" value="0" onclick="dis('0')"/> </td> 
+            <!-- solve function call function solve to evaluate value -->
+            <td><input type="button" value="=" onclick="solve()"/> </td> 
+            <td><input type="button" value="*" onclick="dis('*')"/> </td> 
+         </tr> 
+      </table>
+	</body>
+</html>
